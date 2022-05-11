@@ -14,3 +14,9 @@ app.get('/',(req, res) => {
 app.listen(port, () => {
     console.log(`Example app, listen on port ${port}`)
 })
+
+// Agregar nueva ruta
+// localhost:3000/launchx
+app.get('/launchx',(req, res) => {
+    res.send('Bienvenidos a LaunchX')
+})
